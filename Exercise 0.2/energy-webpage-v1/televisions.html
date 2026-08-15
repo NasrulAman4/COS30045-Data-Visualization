@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energy Flow - Televisions</title>
+
+    <!-- Favicon / Browser Tab Icon -->
+  <link rel="icon" type="image/png" href="./assets/img/PowerIcon.png">
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="./index.html" class="logo-container">
+        <img src="./assets/img/PowerIcon.png" alt="Energy Flow Logo"/>
+        <span>Energy Flow</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./televisions.html" class="active">Televisions</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero-center">
+      <h1>Smart Viewing, <span>Sustainable Living</span></h1>
+      <p>Televisions are a staple in Australian homes, but their energy footprint varies wildly. Discover how your choice in screen technology and viewing habits can impact both your electricity bill and the environment.</p>
+    </section>
+
+    <!-- TV Types Comparison Section -->
+    <section class="tech-comparison-section">
+      <h2 class="section-title border-bottom">Screen Technology Efficiency</h2>
+      
+      <div class="tech-grid">
+        <!-- LED Card -->
+        <div class="card tech-card">
+          <div class="tech-card-header">
+            <h3>LED</h3>
+            <div class="star-rating">
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+          </div>
+          <p>The current standard. LED TVs use light-emitting diodes to backlight the screen. They are highly energy-efficient and affordable, making them a great baseline choice.</p>
+          <div class="energy-profile-box">
+            <span class="profile-label">Energy Profile</span>
+            <span class="profile-value text-success">High Efficiency</span>
+          </div>
+        </div>
+
+        <!-- QLED Card -->
+        <div class="card tech-card">
+          <div class="tech-card-header">
+            <h3>QLED</h3>
+            <div class="star-rating">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+          </div>
+          <p>Quantum Dot LED. These offer brighter screens and better colors than standard LEDs. While efficient, their higher brightness capabilities can increase power consumption if maxed out.</p>
+          <div class="energy-profile-box">
+            <span class="profile-label">Energy Profile</span>
+            <span class="profile-value text-primary">Moderate Efficiency</span>
+          </div>
+        </div>
+
+        <!-- OLED Card -->
+        <div class="card tech-card">
+          <div class="tech-card-header">
+            <h3>OLED</h3>
+            <div class="star-rating">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+          </div>
+          <p>Organic LED. Each pixel illuminates independently, allowing for perfect blacks. However, displaying bright, white scenes across the whole screen draws significantly more power than LED/QLED.</p>
+          <div class="energy-profile-box">
+            <span class="profile-label">Energy Profile</span>
+            <span class="profile-value text-alert">Variable / Lower Efficiency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Energy Rating Label Section -->
+    <section class="info-split-section">
+      <div class="info-image-card">
+        <img src="./assets/img/telePic.jpg" alt="Australian Energy Rating Label on a Television"/>
+      </div>
+      <div class="info-content">
+        <h2>The Energy Rating Label</h2>
+        <p>In Australia, comparing TV efficiency is straightforward thanks to the Energy Rating Label. Look for two key metrics:</p>
+        <ul class="icon-list">
+          <li>
+            <span class="material-symbols-outlined icon-primary">star</span>
+            <div>
+              <strong>Star Rating</strong>
+              <p>More stars mean greater efficiency compared to other models of the same screen size.</p>
+            </div>
+          </li>
+          <li>
+            <span class="material-symbols-outlined icon-secondary">bolt</span>
+            <div>
+              <strong>Energy Consumption Number</strong>
+              <p>This figure (usually in kWh per year) gives you a concrete estimate of running costs based on average usage. Lower is better.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Actionable Steps Section -->
+    <section class="tips-section">
+      <h2 class="section-title text-center">Actionable Steps to Reduce Usage</h2>
+      
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">
+            <span class="material-symbols-outlined">brightness_6</span>
+          </div>
+          <div class="tip-body">
+            <h4>Adjust Brightness</h4>
+            <p>Factory settings are often unnecessarily bright for home environments. Lowering backlight brightness can drastically cut power consumption.</p>
+          </div>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">
+            <span class="material-symbols-outlined">eco</span>
+          </div>
+          <div class="tip-body">
+            <h4>Enable Eco Mode</h4>
+            <p>Most modern TVs feature an 'Eco' or 'Energy Saving' mode that automatically adjusts brightness based on ambient room light.</p>
+          </div>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">
+            <span class="material-symbols-outlined">power_settings_new</span>
+          </div>
+          <div class="tip-body">
+            <h4>Avoid Standby</h4>
+            <p>While standby power is lower than it used to be, switching off the TV at the wall when not in use for extended periods ensures zero energy drain.</p>
+          </div>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">
+            <span class="material-symbols-outlined">straighten</span>
+          </div>
+          <div class="tip-body">
+            <h4>Size Matters</h4>
+            <p>A larger screen requires more power to illuminate. Consider buying a TV sized appropriately for your viewing distance rather than defaulting to the largest option.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Interactive Energy Calculator Section -->
+<section class="calculator-section">
+  <div class="section-header-center">
+    <h2 class="section-title">Appliance Energy Calculator</h2>
+    <p class="section-subtitle">Calculate how much your appliances are costing you to run.</p>
+  </div>
+
+  <div class="calculator-container card">
+    <form id="energy-calculator" novalidate>
+      <div class="form-grid">
+        <!-- Input: Watts -->
+        <div class="form-group">
+          <label for="calc-watts">Appliance Power (Watts)</label>
+          <input type="number" id="calc-watts" placeholder="e.g., 150" required min="1" step="any">
+        </div>
+        
+        <!-- Input: Hours/Day -->
+        <div class="form-group">
+          <label for="calc-hours">Average Hours Used per Day</label>
+          <input type="number" id="calc-hours" placeholder="e.g., 4" required min="0.1" max="24" step="any">
+        </div>
+        
+        <!-- Input: Price -->
+        <div class="form-group">
+          <label for="calc-price">Electricity Price (cents per kWh)</label>
+          <input type="number" id="calc-price" placeholder="e.g., 28.5" required min="1" step="any">
+        </div>
+      </div>
+
+      <!-- Error Message Box -->
+      <div id="calc-error" class="error-message" style="display: none;"></div>
+
+      <button type="submit" class="btn btn-primary-action btn-block">Calculate Energy Usage</button>
+    </form>
+
+    <!-- Dynamic Results Panel (Hidden by default) -->
+    <div id="calc-results" class="results-panel" style="display: none;">
+      <h3>Your Estimated Usage</h3>
+      <div class="results-grid">
+        <div class="result-box">
+          <span>Daily Consumption</span>
+          <strong id="res-daily-kwh">0 kWh</strong>
+        </div>
+        <div class="result-box">
+          <span>Yearly Consumption</span>
+          <strong id="res-yearly-kwh">0 kWh</strong>
+        </div>
+        <div class="result-box highlight">
+          <span>Estimated Yearly Cost</span>
+          <strong id="res-yearly-cost">$0.00</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p class="footer-info">
+          © <span id="current-year"></span> Energy Flow. Created by <strong>Nasrul</strong>.
+        </p>
+        <p class="footer-info footer-ai">
+          <em>Generative AI Acknowledgement: Content and code structure formatted with the assistance of Generative AI.</em>
+        </p>
+      </div>
+      <nav class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="about.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
