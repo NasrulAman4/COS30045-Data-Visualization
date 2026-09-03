@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energy Flow - The Hidden Cost of Screen Size</title>
+
+  <!-- Favicon & Fonts -->
+  <link rel="icon" type="image/png" href="./assets/img/PowerIcon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  
+  <!-- Inline Storyboard Card Styles -->
+  <style>
+    .storyboard-section {
+      margin: 4rem 0;
+    }
+    .storyboard-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .storyboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .sticky-note {
+      background-color: #fdfd96;
+      padding: 1.75rem;
+      box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.08);
+      border-radius: 2px;
+      color: #333;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .sticky-note:nth-child(odd) { transform: rotate(-1deg); }
+    .sticky-note:nth-child(even) { transform: rotate(1deg); }
+    .sticky-note:hover {
+      transform: rotate(0deg) translateY(-4px);
+      box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.12);
+    }
+    .sticky-note h3 {
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-size: 1.2rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 0.4rem;
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+    }
+    .sticky-note p {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="./index.html" class="logo-container">
+        <img src="./assets/img/PowerIcon.png" alt="Energy Flow Logo"/>
+        <span>Energy Flow</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./televisions.html">Televisions</a></li>
+          <li><a href="./data-story.html" class="active">Data Story</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- 1. The Issue / Hero Section -->
+    <section class="hero-center">
+      <h1>The Issue: <span>The Hidden Cost of Screen Size</span></h1>
+      <p>Consumers are buying larger televisions than ever before, but often lack awareness of how these massive screens drastically inflate household energy consumption and environmental impact.</p>
+    </section>
+
+    <!-- Storyboard Outline Cards -->
+    <section class="storyboard-section">
+      <div class="storyboard-header">
+        <h2>Data Story Workflow</h2>
+        <p>A step-by-step walkthrough of problem identification, data evidence, and recommendations.</p>
+      </div>
+
+      <div class="storyboard-grid">
+        <div class="sticky-note">
+          <h3>1. The Issue</h3>
+          <p><strong>Focus:</strong> Modern TV Consumption</p>
+          <p>Highlighting the escalating energy footprint caused by shifting consumer habits toward larger displays.</p>
+        </div>
+        <div class="sticky-note">
+          <h3>2. Demonstrate Issue</h3>
+          <p><strong>Data:</strong> Size Frequencies</p>
+          <p>Using frequency histograms to show how standard living room TVs have concentrated heavily in the 55" to 65" range.</p>
+        </div>
+        <div class="sticky-note">
+          <h3>3. Demonstrate Impact</h3>
+          <p><strong>Data:</strong> Size vs. Energy</p>
+          <p>Mapping out the exponential jump in kilowatt-hours as screen diagonals expand past 75 inches.</p>
+        </div>
+        <div class="sticky-note">
+          <h3>4. Explore Nuance</h3>
+          <p><strong>Data:</strong> Display Technology</p>
+          <p>Analyzing whether tech choices (LED vs. OLED) alter power consumption inside identical size tiers.</p>
+        </div>
+        <div class="sticky-note">
+          <h3>5. Market Context</h3>
+          <p><strong>Data:</strong> Brand Share</p>
+          <p>Identifying market leaders (Samsung, LG, Kogan) who dictate baseline manufacturing efficiencies.</p>
+        </div>
+        <div class="sticky-note">
+          <h3>6. Recommendations</h3>
+          <p><strong>Action:</strong> Smart Buyer Plan</p>
+          <p>Delivering practical solutions: right-sizing screens to room dimensions and reviewing energy rating labels.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr style="margin: 4rem 0; border: 0; border-top: 1px solid #ddd;">
+
+    <!-- Visualization 1: Size Frequency -->
+    <section class="info-split-section">
+      <div class="info-image-card">
+        <img src="./assets/img/frequent_tv_size.png" alt="Histogram showing frequent TV sizes"/>
+      </div>
+      <div class="info-content">
+        <h2>1. Demonstrating the Issue: Size Preferences</h2>
+        <p>The standard living room TV has grown. Our market data shows a massive concentration of models in the 140cm to 165cm (55" to 65") range.</p>
+        <ul class="icon-list">
+          <li>
+            <span class="material-symbols-outlined icon-primary">aspect_ratio</span>
+            <div>
+              <strong>The Disappearance of Small Screens</strong>
+              <p>Smaller, more efficient screens are becoming rare as primary televisions, meaning baseline household energy needs are climbing.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Visualization 2: Size vs Energy Consumption -->
+    <section class="info-split-section" style="flex-direction: row-reverse;">
+      <div class="info-image-card">
+        <img src="./assets/img/Bar_Chart_screensize_energy_consumption.png" alt="Bar chart mapping screen size to energy consumption"/>
+      </div>
+      <div class="info-content">
+        <h2>2. Demonstrating the Impact: Energy Scaling</h2>
+        <p>There is a stark, direct relationship between the diagonal size of a television and its annual running cost.</p>
+        <ul class="icon-list">
+          <li>
+            <span class="material-symbols-outlined icon-secondary">bolt</span>
+            <div>
+              <strong>Exponential Energy Growth</strong>
+              <p>Upgrading to a 75"+ screen pushes consumption upwards of 750 kWh/year. Screen choice directly drives the energy issue.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Visualization 3: Display Technology -->
+    <section class="info-split-section">
+      <div class="info-image-card">
+        <img src="./assets/img/Bar_Chart_Screen_technology.png" alt="Grouped bar chart comparing display technologies"/>
+      </div>
+      <div class="info-content">
+        <h2>3. Exploring Nuance: Screen Technology</h2>
+        <p>To overcome this issue without sacrificing quality, we look at display technology. Not all large screens draw equal power.</p>
+        <ul class="icon-list">
+          <li>
+            <span class="material-symbols-outlined icon-primary">monitor</span>
+            <div>
+              <strong>LED vs. OLED</strong>
+              <p>While OLED panels offer great contrast, they frequently draw higher total energy averages than standard LCD (LED) equivalents.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Visualization 4: Market Context / Brands -->
+    <section class="info-split-section" style="flex-direction: row-reverse;">
+      <div class="info-image-card">
+        <img src="./assets/img/Brands_Pie_Chart.png" alt="Pie chart showing market brand share"/>
+      </div>
+      <div class="info-content">
+        <h2>4. Market Context: Industry Dominance</h2>
+        <p>If we want to improve overall market efficiency, we need to examine who controls manufacturing volume.</p>
+        <ul class="icon-list">
+          <li>
+            <span class="material-symbols-outlined icon-primary">pie_chart</span>
+            <div>
+              <strong>Top Brand Baseline</strong>
+              <p>Samsung, Kogan, and LG dominate available models. Any program addressing energy efficiency must target these key players.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Recommendations / Solution -->
+    <section class="tips-section">
+      <h2 class="section-title text-center">Recommendations: Smart Buyer Action Plan</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">
+            <span class="material-symbols-outlined">straighten</span>
+          </div>
+          <div class="tip-body">
+            <h4>Right-Size Your Screen</h4>
+            <p>Resist buying the largest screen possible. Match TV dimensions to your room viewing distance to naturally cut running costs.</p>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">
+            <span class="material-symbols-outlined">star</span>
+          </div>
+          <div class="tip-body">
+            <h4>Optimize Display Tech</h4>
+            <p>If choosing high-end tech like OLED, carefully check individual Energy Rating Labels to find optimized options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p class="footer-info">
+          © <span id="current-year"></span> Energy Flow. Created by <strong>Nasrul</strong>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
