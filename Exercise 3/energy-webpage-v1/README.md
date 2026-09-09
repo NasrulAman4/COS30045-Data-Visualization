@@ -15,6 +15,8 @@ Altough GenAI was used to assit in creating initial structural templates and sty
 * **Asset Path Corrections**: Adjusted generated filepaths such as 'assets/img/logo.png' and 'assets/css/styles.css'.
 * **Styling Fine-Tuning**: Changed color values, font size, padding, and duration of transitions in order to maintain consistency of site design in 'index.html','televisions.html', and 'about.html'
 * **Responsive Layout Adjustments**: Adjusted the grid layout and breakpoint to make sure components render properly on mobile devices, tablets, and computer screens.
+* **Data Context Calibration**: Corrected narrative claims regarding sales data—reframing findings around overall market supply rather than assuming commercial consumer intent.
+* **Chart Image Sizing**: Manually updated image styles (`object-fit: contain`, `height: auto`, and flex ratios) to prevent chart axis labels from cropping.
 
 ### Key Learnings
 * **Semantic Web Standards**: Learned about the need for HTML5 semantic tags to increase accessibility and keep the content seperated from the styling.

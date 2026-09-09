@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Energy Flow - Storyboard & Smart TV Buyer's Guide</title>
+  <title>Energy Flow - Business & Office Buying Guide</title>
 
   <!-- Favicon & Fonts -->
   <link rel="icon" type="image/png" href="./assets/img/PowerIcon.png">
@@ -15,9 +15,8 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css">
   
-  <!-- Sticky Note Storyboard & Consumer Layout Styles -->
+  <!-- Sticky Note Storyboard & Commercial Layout Styles -->
   <style>
-    /* Section Container */
     .storyboard-wrapper {
       margin: 3rem 0 5rem 0;
     }
@@ -26,7 +25,7 @@
       margin-bottom: 2.5rem;
     }
 
-    /* Sticky Note Grid (Matches Example Layout) */
+    /* Sticky Note Grid */
     .sticky-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -41,14 +40,13 @@
       border: 1px solid #fef08a;
       box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.08);
       padding: 1.75rem 1.5rem;
-      aspect-ratio: 1 / 1; /* Square sticky note ratio */
+      aspect-ratio: 1 / 1;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    /* Organic Handwritten Rotation */
     .sticky-card:nth-child(1) { transform: rotate(-1.5deg); }
     .sticky-card:nth-child(2) { transform: rotate(1deg); }
     .sticky-card:nth-child(3) { transform: rotate(-1deg); }
@@ -62,7 +60,6 @@
       z-index: 2;
     }
 
-    /* Sticky Note Typography */
     .sticky-card h3 {
       font-family: 'Caveat', cursive, sans-serif;
       font-size: 1.8rem;
@@ -70,7 +67,6 @@
       margin-top: 0;
       margin-bottom: 0.5rem;
       line-height: 1.1;
-      border-bottom: 2px stroke #fef08a;
     }
 
     .sticky-card p {
@@ -81,19 +77,12 @@
       margin: 0;
     }
 
-    /* Responsive Grid for Mobile Devices */
     @media (max-width: 850px) {
-      .sticky-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .sticky-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 550px) {
-      .sticky-grid {
-        grid-template-columns: 1fr;
-      }
-      .sticky-card {
-        aspect-ratio: auto;
-      }
+      .sticky-grid { grid-template-columns: 1fr; }
+      .sticky-card { aspect-ratio: auto; }
     }
   </style>
 </head>
@@ -110,8 +99,8 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./televisions.html">Televisions</a></li>
-          <li><a href="./data-story.html" class="active">Buyer's Guide</a></li>
-          <li><a href="./data-story2.html">Business Guide</a></li>
+          <li><a href="./data-story.html">Buyer's Guide</a></li>
+          <li><a href="./data-story2.html" class="active">Business Guide</a></li>
           <li><a href="./about.html">About Us</a></li>
         </ul>
       </nav>
@@ -123,59 +112,59 @@
 
     <!-- Hero Section -->
     <section class="hero-center">
-      <h1>Smart TV Buyer's Guide: <span>Save Energy & Lower Bills</span></h1>
-      <p>Shopping for a new television? Discover how screen size, display technology, and popular brands impact your monthly electricity costs before you buy.</p>
+      <h1>Business Screen Buying: <span>Save Money & Cut Energy Use</span></h1>
+      <p>Buying screens for offices, hotels, or schools? Learn how screen size, technology, and brand choices affect your organization's energy bills and carbon footprint before placing bulk orders.</p>
     </section>
 
     <!-- STORYBOARD SECTION (Sticky Note Grid) -->
     <section class="storyboard-wrapper">
       <div class="storyboard-title">
-        <h2>Website Storyboard</h2>
-        <p>A consumer journey through the website narrative arc.</p>
+        <h2>Business Planning Storyboard</h2>
+        <p>A simple step-by-step guide for office managers and buyers purchasing screens in bulk.</p>
       </div>
 
       <div class="sticky-grid">
         <!-- Card 1 -->
         <div class="sticky-card">
           <h3>Issue:</h3>
-          <p>Consumers are buying bigger TVs without realizing how much they increase household power bills.</p>
+          <p>Buying too many large screens for offices slowly drives up company power bills and harms green goals.</p>
         </div>
 
         <!-- Card 2 -->
         <div class="sticky-card">
           <h3>Demonstrate Issue:</h3>
-          <p>Show size trends: 55"–65" screens now dominate store shelves while smaller screens disappear.</p>
+          <p>New standard: 55"–65" screens are becoming the default for meeting rooms, raising everyday energy use.</p>
         </div>
 
         <!-- Card 3 -->
         <div class="sticky-card">
           <h3>Demonstrate Impact:</h3>
-          <p>Show power draw vs. size: upgrading to a 75"+ screen can consume over 750 kWh/year.</p>
+          <p>Bulk cost: Buying dozens of 75"+ screens multiplies power consumption by thousands of extra kWh each year.</p>
         </div>
 
         <!-- Card 4 -->
         <div class="sticky-card">
           <h3>Explore Tech:</h3>
-          <p>Compare display tech: high-end OLED screens often draw more average power than standard LED screens.</p>
+          <p>Screen types: Fancy OLED displays often use more power than standard LED screens when left on all day.</p>
         </div>
 
         <!-- Card 5 -->
         <div class="sticky-card">
           <h3>Market Context:</h3>
-          <p>Show brand share: Samsung, LG, and Kogan control the choices available on retail shelves.</p>
+          <p>Top brands: Samsung & LG supply most business screens, so companies must request efficient models directly.</p>
         </div>
 
         <!-- Card 6 -->
         <div class="sticky-card">
           <h3>RECOMMENDATION:</h3>
-          <p>Right-size your TV for room distance & check the Energy Rating Label before buying!</p>
+          <p>Set strict energy rules for supplier contracts and match screen sizes to the actual room size.</p>
         </div>
       </div>
     </section>
 
     <hr style="margin: 4rem 0; border: 0; border-top: 1px solid #e2e8f0;">
 
-    <!-- CONSUMER DATA STORY & VISUALIZATIONS -->
+    <!-- COMMERCIAL DATA STORY & VISUALIZATIONS -->
 
     <!-- Section 1: Market Sizes -->
     <section class="info-split-section">
@@ -183,14 +172,14 @@
         <img src="./assets/img/frequent_tv_size.png" alt="Histogram showing frequent TV sizes"/>
       </div>
       <div class="info-content">
-        <h2>1. Market Trend: Big Screens Are the New Standard</h2>
-        <p>When walking into an electronics store, living room displays have grown significantly. Retail market data shows that 55-inch to 65-inch (140cm to 165cm) models are now the default baseline for standard buyers.</p>
+        <h2>1. Office Standards: Screens Are Getting Bigger</h2>
+        <p>The display market is heavily skewed toward larger screen sizes. Dataset trends show 55-inch to 65-inch models (140cm–165cm) dominate overall sales and availability, making larger screens the standard choice for both home and workplace setups.</p>
         <ul class="icon-list">
           <li>
             <span class="material-symbols-outlined icon-primary">aspect_ratio</span>
             <div>
-              <strong>Smaller Options Are Fading</strong>
-              <p>Compact, energy-efficient screens under 40 inches are becoming rare, automatically pushing shoppers toward larger baseline power requirements.</p>
+              <strong>Smaller Options Are Harder to Find</strong>
+              <p>Smaller, lower-power screens represent a shrinking portion of market sales, requiring commercial buyers to plan energy budgets around today’s larger default display sizes.</p>
             </div>
           </li>
         </ul>
@@ -203,14 +192,14 @@
         <img src="./assets/img/Bar_Chart_screensize_energy_consumption.png" alt="Bar chart mapping screen size to energy consumption"/>
       </div>
       <div class="info-content">
-        <h2>2. Running Costs: Screen Size Drives Power Draw</h2>
-        <p>Bigger screens require significantly more electricity. While a mid-sized TV uses modest energy, upgrading to an extra-large 75-inch+ screen can skyrocket your power draw up to 750 kWh every year.</p>
+        <h2>2. Higher Costs: Bulk Orders Multiply Energy Bills</h2>
+        <p>Larger screens require much more power to run. Installing dozens of extra-large 75"+ screens across a building increases company energy use by tens of thousands of kilowatt-hours every year.</p>
         <ul class="icon-list">
           <li>
             <span class="material-symbols-outlined icon-secondary">bolt</span>
             <div>
-              <strong>Measure Your Room First</strong>
-              <p>Resist buying the largest screen available. Right-sizing your TV for your living room distance is the fastest way to protect your electricity budget.</p>
+              <strong>Set Size Rules for Rooms</strong>
+              <p>Choosing screen sizes based on actual room dimensions prevents buying unnecessarily large models and keeps ongoing power costs low.</p>
             </div>
           </li>
         </ul>
@@ -223,14 +212,14 @@
         <img src="./assets/img/Bar_Chart_Screen_technology.png" alt="Grouped bar chart comparing display technologies"/>
       </div>
       <div class="info-content">
-        <h2>3. Display Tech: Picture Quality Comes at a Price</h2>
-        <p>Not all screen types operate equally. Comparing traditional LED with premium OLED displays shows that picture performance heavily influences annual running costs.</p>
+        <h2>3. Screen Types: Image Quality vs. Daily Power Use</h2>
+        <p>Choosing the right screen technology for displays that stay on all day requires balancing picture quality with electricity costs.</p>
         <ul class="icon-list">
           <li>
             <span class="material-symbols-outlined icon-primary">monitor</span>
             <div>
-              <strong>OLED vs. Standard LED Draw</strong>
-              <p>While OLED panels deliver incredible dark contrast, they frequently consume higher average energy than equivalent LED models in medium and large size categories.</p>
+              <strong>LED vs. OLED Power Use</strong>
+              <p>While OLED screens offer brilliant picture contrast in boardrooms, standard LED panels usually draw less power over long daily work hours.</p>
             </div>
           </li>
         </ul>
@@ -243,31 +232,31 @@
         <img src="./assets/img/Brands_Pie_Chart.png" alt="Pie chart showing market brand share"/>
       </div>
       <div class="info-content">
-        <h2>4. Major Brands: Who Controls Store Shelves?</h2>
-        <p>A small group of major manufacturers dominates store shelves, shaping the baseline efficiency choices available to buyers.</p>
+        <h2>4. Major Brands: Asking Suppliers for Efficient Options</h2>
+        <p>A few major brands control most of the business screen market. Business buyers have enough purchasing power to demand eco-friendly models when ordering in bulk.</p>
         <ul class="icon-list">
           <li>
             <span class="material-symbols-outlined icon-primary">pie_chart</span>
             <div>
-              <strong>Compare Individual Models</strong>
-              <p>Samsung, LG, and Kogan make up the majority of available models. Always compare energy labels directly rather than assuming all models from one brand use equal power.</p>
+              <strong>Hold Suppliers Accountable</strong>
+              <p>Because brands like Samsung and LG make up the majority of options, companies should require low standby power and eco-friendly ratings in supplier contracts.</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Consumer Action Plan -->
+    <!-- Commercial Action Plan -->
     <section class="tips-section">
-      <h2 class="section-title text-center">Your Smart Buyer Action Plan</h2>
+      <h2 class="section-title text-center">Business Action Plan</h2>
       <div class="tips-grid">
         <div class="tip-card">
           <div class="tip-icon">
             <span class="material-symbols-outlined">straighten</span>
           </div>
           <div class="tip-body">
-            <h4>Right-Size Your Screen</h4>
-            <p>Pick a TV size tailored to your viewing distance. Avoiding unnecessary screen inches is the single most effective way to keep electricity costs low.</p>
+            <h4>Match Screen Size to Room Size</h4>
+            <p>Create clear sizing guidelines for small meeting rooms vs. large halls to avoid buying oversized screens that waste energy.</p>
           </div>
         </div>
         <div class="tip-card">
@@ -275,8 +264,8 @@
             <span class="material-symbols-outlined">star</span>
           </div>
           <div class="tip-body">
-            <h4>Check the Energy Star Rating</h4>
-            <p>If buying high-end tech like OLED, always inspect the official Energy Rating Label to choose the most efficient model in that category.</p>
+            <h4>Set Energy Limits in Supplier Contracts</h4>
+            <p>Require max power usage limits when asking suppliers for quotes to ensure you only purchase energy-efficient models.</p>
           </div>
         </div>
       </div>
@@ -291,7 +280,15 @@
         <p class="footer-info">
           © <span id="current-year"></span> Energy Flow. Created by <strong>Nasrul</strong>.
         </p>
+        <p class="footer-info footer-ai">
+          <em>Generative AI Acknowledgement: Content and code structure formatted with the assistance of Generative AI.</em>
+        </p>
       </div>
+      <nav class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="about.html">Contact</a>
+      </nav>
     </div>
   </footer>
 
