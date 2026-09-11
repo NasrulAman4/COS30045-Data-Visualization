@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energy Flow - Exercise 4.1 SVG Shapes</title>
+
+  <!-- Favicon / Browser Tab Icon -->
+  <link rel="icon" type="image/png" href="./assets/img/PowerIcon.png">
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="./index.html" class="logo-container">
+        <img src="./assets/img/PowerIcon.png" alt="Energy Flow Logo"/>
+        <span>Energy Flow</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./televisions.html">Televisions</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./svg-house.html" class="active">Exercise 4.1 (SVG)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero-center">
+      <h1>Exercise 4.1: <span>SVG Shapes Illustration</span></h1>
+      <p>Demonstrating vector graphics using HTML SVG elements including <code>&lt;rect&gt;</code>, <code>&lt;polygon&gt;</code>, <code>&lt;circle&gt;</code>, <code>&lt;ellipse&gt;</code>, <code>&lt;line&gt;</code>, <code>&lt;polyline&gt;</code>, <code>&lt;path&gt;</code>, and <code>&lt;text&gt;</code>.</p>
+    </section>
+
+    <!-- Two Side-by-Side SVG Boxes (Before and After) -->
+    <section class="svg-grid">
+      
+      <!-- Box 1: Before -->
+      <div class="svg-card">
+        <h3>Before (Initial SVG State)</h3>
+        <div class="svg-container">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sky -->
+            <rect id="sky" x="0" y="0" width="500" height="300" fill="#87CEEB" />
+            
+            <!-- Ground -->
+            <rect id="ground" x="0" y="300" width="500" height="200" fill="#228B22" />
+            
+            <!-- Sun and Sun Rays -->
+            <circle id="sun" cx="400" cy="80" r="35" fill="#FFD700" />
+            <line x1="400" y1="30" x2="400" y2="15" stroke="#FFD700" stroke-width="3" />
+            <line x1="400" y1="130" x2="400" y2="145" stroke="#FFD700" stroke-width="3" />
+            <line x1="350" y1="80" x2="335" y2="80" stroke="#FFD700" stroke-width="3" />
+            <line x1="450" y1="80" x2="465" y2="80" stroke="#FFD700" stroke-width="3" />
+
+            <!-- Tree Trunk and Tree Foliage -->
+            <rect id="tree-trunk" x="60" y="240" width="30" height="90" fill="#8B4513" />
+            <ellipse id="tree-foliage" cx="75" cy="210" rx="50" ry="40" fill="#2E8B57" />
+
+            <!-- House Body -->
+            <rect id="house-body" x="150" y="200" width="200" height="150" fill="#A0522D" />
+
+            <!-- House Roof -->
+            <polygon id="house-roof" points="150,200 250,100 350,200" fill="#8B0000" />
+
+            <!-- Door and Doorknob  -->
+            <rect id="door" x="225" y="270" width="50" height="80" fill="#D2691E" />
+            <circle id="doorknob" cx="265" cy="315" r="4" fill="#000000" />
+
+            <!-- Windows and Window Grids  -->
+            <!-- Main Windows Group (Applies shared styling to all child elements) -->
+            <g id="all-windows" fill="#E0FFFF" stroke="#4682B4" stroke-width="2">
+              
+              <!-- Left Window (Positioned using translate) -->
+              <g id="window-left" transform="translate(175, 230)">
+                <rect width="35" height="35" />
+                <line x1="17.5" y1="0" x2="17.5" y2="35" />
+                <line x1="0" y1="17.5" x2="35" y2="17.5" />
+              </g>
+
+              <!-- Right Window (Positioned using translate) -->
+              <g id="window-right" transform="translate(290, 230)">
+                <rect width="35" height="35" />
+                <line x1="17.5" y1="0" x2="17.5" y2="35" />
+                <line x1="0" y1="17.5" x2="35" y2="17.5" />
+              </g>
+
+            </g>
+
+            <!-- Fence -->
+            <polyline id="fence" points="10,340 10,300 30,300 30,340 50,340 50,300 70,300 70,340" stroke="#FFFFFF" stroke-width="3" fill="none" />
+
+            <!-- Curved Garden Pathway -->
+            <path id="pathway" d="M 225,350 Q 170,420 250,500" stroke="#FFA500" stroke-width="16" fill="none" />
+
+            <!-- Text Label -->
+            <text id="house-text" x="370" y="280" font-family="Work Sans, sans-serif" font-size="22" font-weight="bold" fill="#000000">House</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Box 2: After -->
+      <div class="svg-card">
+        <h3>After (Modified Coordinates and Layout)</h3>
+        <div class="svg-container">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sky -->
+            <rect id="sky" x="0" y="0" width="500" height="300" fill="#87CEEB" />
+            
+            <!-- Ground -->
+            <rect id="ground" x="0" y="300" width="500" height="200" fill="#228B22" />
+
+            <!-- Sun Moved Left and Rays -->
+            <circle id="sun" cx="100" cy="80" r="35" fill="#FFD700" />
+            <line x1="100" y1="30" x2="100" y2="15" stroke="#FFD700" stroke-width="3" />
+            <line x1="100" y1="130" x2="100" y2="145" stroke="#FFD700" stroke-width="3" />
+            <line x1="50" y1="80" x2="35" y2="80" stroke="#FFD700" stroke-width="3" />
+            <line x1="150" y1="80" x2="165" y2="80" stroke="#FFD700" stroke-width="3" />
+
+            <!-- Tree Trunk and Tree Foliage Shifted to Right Lawn -->
+            <rect id="tree-trunk" x="410" y="240" width="30" height="90" fill="#8B4513" />
+            <ellipse id="tree-foliage" cx="425" cy="210" rx="50" ry="40" fill="#2E8B57" />
+
+            <!-- House Body Shifted 20px Right -->
+            <rect id="house-body" x="170" y="200" width="200" height="150" fill="#A0522D" />
+
+            <!-- House Roof  Shifted 20px Right -->
+            <polygon id="house-roof" points="170,200 270,100 370,200" fill="#8B0000" />
+
+            <!-- Door and Doorknob Shifted 20px Right -->
+            <rect id="door" x="245" y="270" width="50" height="80" fill="#D2691E" />
+            <circle id="doorknob" cx="285" cy="315" r="4" fill="#000000" />
+
+            <!-- Windows Shifted 20px Right -->
+            <!-- Main Windows Group (Applies shared styling to all child elements) -->
+            <g id="all-windows" fill="#E0FFFF" stroke="#4682B4" stroke-width="2">
+              
+              <!-- Left Window (Positioned using translate) -->
+              <g id="window-left" transform="translate(195, 250)">
+                <rect width="35" height="35" />
+                <line x1="17.5" y1="0" x2="17.5" y2="35" />
+                <line x1="0" y1="17.5" x2="35" y2="17.5" />
+              </g>
+
+              <!-- Right Window (Positioned using translate) -->
+              <g id="window-right" transform="translate(310, 250)">
+                <rect width="35" height="35" />
+                <line x1="17.5" y1="0" x2="17.5" y2="35" />
+                <line x1="0" y1="17.5" x2="35" y2="17.5" />
+              </g>
+
+            </g>
+
+            <!-- Fence Moved to Right Side -->
+            <polyline id="fence" points="370,340 370,300 390,300 390,340 410,340 410,300 430,300 430,340" stroke="#FFFFFF" stroke-width="3" fill="none" />
+
+            <!-- Curved Garden Pathway Re-curved -->
+            <path id="pathway" d="M 245,350 Q 310,420 180,500" stroke="#FFA500" stroke-width="16" fill="none" />
+
+            <!-- Text Label Moved and Updated -->
+            <text id="house-text" x="30" y="380" font-family="Work Sans, sans-serif" font-size="22" font-weight="bold" fill="#000000">My Eco House</text>
+          </svg>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="table-section">
+      <h2 class="section-title">Coordinate and Position Comparison Table</h2>
+      <p class="section-subtitle">Below is a detailed element-by-element analysis comparing the initial coordinates and attributes to the modified layout.</p>
+
+      <div class="table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Element ID</th>
+              <th>SVG Shape Type</th>
+              <th>Before Coordinates / Attributes</th>
+              <th>After Coordinates / Attributes</th>
+              <th>Movement / Change Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>#sun</code></td>
+              <td><span class="badge-code">&lt;circle&gt;</span></td>
+              <td><code>cx="400", cy="80", r="35"</code></td>
+              <td><code>cx="100", cy="80", r="35"</code></td>
+              <td>Moved 300px to the left.</td>
+            </tr>
+            <tr>
+              <td><code>#tree-trunk</code></td>
+              <td><span class="badge-code">&lt;rect&gt;</span></td>
+              <td><code>x="60", y="240", w="30", h="90"</code></td>
+              <td><code>x="410", y="240", w="30", h="90"</code></td>
+              <td>Moved 350px right from left garden to right garden.</td>
+            </tr>
+            <tr>
+              <td><code>#tree-foliage</code></td>
+              <td><span class="badge-code">&lt;ellipse&gt;</span></td>
+              <td><code>cx="75", cy="210", rx="50", ry="40"</code></td>
+              <td><code>cx="425", cy="210", rx="50", ry="40"</code></td>
+              <td>Moved 350px right to top of the tree trunk.</td>
+            </tr>
+            <tr>
+              <td><code>#house-body</code></td>
+              <td><span class="badge-code">&lt;rect&gt;</span></td>
+              <td><code>x="150", y="200", w="200", h="150"</code></td>
+              <td><code>x="170", y="200", w="200", h="150"</code></td>
+              <td>Moved 20px to the right.</td>
+            </tr>
+            <tr>
+              <td><code>#house-roof</code></td>
+              <td><span class="badge-code">&lt;polygon&gt;</span></td>
+              <td><code>points="150,200 250,100 350,200"</code></td>
+              <td><code>points="170,200 270,100 370,200"</code></td>
+              <td>All vertices moved +20px along the X-axis.</td>
+            </tr>
+            <tr>
+              <td><code>#door</code></td>
+              <td><span class="badge-code">&lt;rect&gt;</span></td>
+              <td><code>x="225", y="270", w="50", h="80"</code></td>
+              <td><code>x="245", y="270", w="50", h="80"</code></td>
+              <td>Moved 20px right with main house structure.</td>
+            </tr>
+            <tr>
+              <td><code>#doorknob</code></td>
+              <td><span class="badge-code">&lt;circle&gt;</span></td>
+              <td><code>cx="265", cy="315", r="4"</code></td>
+              <td><code>cx="285", cy="315", r="4"</code></td>
+              <td>Moved +20px horizontally.</td>
+            </tr>
+            <tr>
+              <td><code>#window-left</code></td>
+              <td><span class="badge-code">&lt;rect&gt;</span></td>
+              <td><code>x="175", y="230", w="35", h="35"</code></td>
+              <td><code>x="195", y="250", w="35", h="35"</code></td>
+              <td>Moved 20px right 20px down.</td>
+            </tr>
+            <tr>
+              <td><code>#window-right</code></td>
+              <td><span class="badge-code">&lt;rect&gt;</span></td>
+              <td><code>x="290", y="230", w="35", h="35"</code></td>
+              <td><code>x="310", y="250", w="35", h="35"</code></td>
+              <td>Moved 20px left 20px down.</td>
+            </tr>
+            <tr>
+              <td><code>#fence</code></td>
+              <td><span class="badge-code">&lt;polyline&gt;</span></td>
+              <td><code>points="10,340 ... 70,340"</code></td>
+              <td><code>points="370,340 ... 430,340"</code></td>
+              <td>Relocated 360px right behind the moved tree.</td>
+            </tr>
+            <tr>
+              <td><code>#pathway</code></td>
+              <td><span class="badge-code">&lt;path&gt;</span></td>
+              <td><code>d="M 225,350 Q 170,420 250,500"</code></td>
+              <td><code>d="M 245,350 Q 310,420 180,500"</code></td>
+              <td>Updated quadratic Bezier curve direction and exit point.</td>
+            </tr>
+            <tr>
+              <td><code>#house-text</code></td>
+              <td><span class="badge-code">&lt;text&gt;</span></td>
+              <td><code>x="370", y="280"</code> ("House")</td>
+              <td><code>x="30", y="380"</code> ("My Eco House")</td>
+              <td>Moved to bottom-left corner with updated string content.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p class="footer-info">
+          © <span id="current-year"></span> Energy Flow. Created by <strong>Nasrul</strong>.
+        </p>
+        <p class="footer-info footer-ai">
+          <em>Generative AI Acknowledgement: Content and code structure formatted with the assistance of Generative AI.</em>
+        </p>
+      </div>
+      <nav class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="about.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
