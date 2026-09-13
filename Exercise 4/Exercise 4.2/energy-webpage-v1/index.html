@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energy Flow - Australian Appliance Energy Consumption</title>
+  
+  <!-- Favicon / Browser Tab Icon -->
+  <link rel="icon" type="image/png" href="./assets/img/PowerIcon.png">
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Requirement: Navigation present on all pages -->
+  <header>
+    <div class="container nav-container">
+      <!-- Requirement: Logo in top-left, clicking returns to Home page -->
+      <a href="./index.html" class="logo-container">
+        <img src="./assets/img/PowerIcon.png" alt="Energy Flow Power Logo"/>
+        <span>Energy Flow</span>
+      </a>
+      <nav>
+        <ul>
+          <!-- Requirement: Hover effects and clear active page indicator -->
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./televisions.html">Televisions</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero-grid">
+      <div class="hero-text">
+        <h1>Empowering Australian Homes to <span>Conserve Energy</span>.</h1>
+        <p>Make data-driven decisions about your appliance usage. Access comprehensive energy star ratings, efficiency trends, and transparent data to reduce your environmental footprint and lower utility costs.</p>
+        <svg></svg>
+        <div class="btn-group">
+          <a href="televisions.html" class="btn btn-primary-action">Explore Appliances</a>
+          <a href="about.html" class="btn btn-secondary-action">View Ratings Guide</a>
+        </div>
+      </div>
+      <div class="hero-image-card">
+        <img src="./assets/img/tablet.jpg" alt="Energy consumption dashboard interface"/>
+      </div>
+    </section>
+
+    <!-- Trends Grid Section -->
+    <section class="trends-section">
+      <h2 class="section-title">Australian Energy Trends</h2>
+      <div class="trends-grid">
+        
+        <!-- Large Card -->
+        <div class="card card-large">
+          <div>
+            <div class="card-header">
+              <h3>The Shift to High-Efficiency</h3>
+              <span class="material-symbols-outlined text-primary">monitoring</span>
+            </div>
+            <p>Over the past decade, Australian households have increasingly adopted appliances with 4-star ratings or higher, driven by rising energy costs and environmental awareness. Refrigerators and washing machines lead this transition.</p>
+          </div>
+          <a href="about.html" class="card-link">
+            <span>Read Full Report</span>
+            <span class="material-symbols-outlined icon-sm">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Highlight Card -->
+        <div class="card card-highlight">
+          <span class="material-symbols-outlined icon-lg">eco</span>
+          <div class="stat-number">32%</div>
+          <p>Average reduction in energy use for upgraded homes.</p>
+        </div>
+
+        <!-- Standby Power Card -->
+        <div class="card card-medium">
+          <h3>Standby Power Drain</h3>
+          <p>Often referred to as 'vampire power', appliances left on standby can account for up to 10% of an average household's electricity bill. Televisions and entertainment systems are primary contributors.</p>
+          <div class="tip-box">
+            <strong>Tip:</strong> Use smart power boards to easily cut power to multiple devices when not in use.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Requirement: FAQ Accordion Section (Uses JavaScript for interactivity) -->
+    <section class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>How can I reduce my energy bill?</span>
+            <span class="material-symbols-outlined accordion-icon">expand_more</span>
+          </button>
+          <div class="accordion-content">
+            <p>The most effective ways include upgrading to appliances with higher Energy Star ratings, minimizing standby power usage by switching off devices at the wall, and optimizing usage times for major appliances like washing machines to off-peak hours if your tariff allows.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>What is the Energy Star rating?</span>
+            <span class="material-symbols-outlined accordion-icon">expand_more</span>
+          </button>
+          <div class="accordion-content">
+            <p>The Energy Rating Label provides a comparative assessment of the appliance's energy efficiency and an estimate of its annual energy consumption. More stars mean the appliance is more efficient and will cost less to run compared to other models of similar size and capacity.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Are newer appliances always more efficient?</span>
+            <span class="material-symbols-outlined accordion-icon">expand_more</span>
+          </button>
+          <div class="accordion-content">
+            <p>Generally, yes. Minimum Energy Performance Standards (MEPS) are regularly updated in Australia, meaning a new appliance on the market today is legally required to be more efficient than many older models. However, always check the specific rating label to compare.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Requirement: Footer present on all pages -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p class="footer-info">
+          © <span id="current-year"></span> Energy Flow. Created by <strong>Nasrul</strong>.
+        </p>
+        <p class="footer-info footer-ai">
+          <em>Generative AI Acknowledgement: Content and code structure formatted with the assistance of Generative AI.</em>
+        </p>
+      </div>
+      <nav class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="about.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="./assets/js/scripts.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
