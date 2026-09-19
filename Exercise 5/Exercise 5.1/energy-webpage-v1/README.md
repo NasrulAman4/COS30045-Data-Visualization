@@ -1,5 +1,5 @@
 ## Introduction ##
-AI assistance was used in this project for the creation of interactive data visulisations using D3.js. AI was mainly used for debugging, layout aesthetics, and JavaScript formatting.
+AI assistance was used in this project for the creation of interactive data vizualisation using D3.js. AI was mainly used for debugging, layout aesthetics, and JavaScript formatting.
 
 ## Tool Description ##
 Gemini (Google AI): Adaptive conversational artificial intelligence model that is used for code generation, debugging and data visualization.
