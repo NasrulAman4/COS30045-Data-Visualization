@@ -47,53 +47,40 @@
       <p>Demonstrating vector graphics using HTML SVG elements including <code>&lt;rect&gt;</code>, <code>&lt;polygon&gt;</code>, <code>&lt;circle&gt;</code>, <code>&lt;ellipse&gt;</code>, <code>&lt;line&gt;</code>, <code>&lt;polyline&gt;</code>, <code>&lt;path&gt;</code>, and <code>&lt;text&gt;</code>.</p>
     </section>
 
-    <!-- Two Side-by-Side SVG Boxes (Before and After) -->
     <section class="svg-grid">
       
-      <!-- Box 1: Before -->
       <div class="svg-card">
         <h3>Before (Initial SVG State)</h3>
         <div class="svg-container">
           <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <!-- Sky -->
             <rect id="sky" x="0" y="0" width="500" height="300" fill="#87CEEB" />
             
-            <!-- Ground -->
             <rect id="ground" x="0" y="300" width="500" height="200" fill="#228B22" />
             
-            <!-- Sun and Sun Rays -->
             <circle id="sun" cx="400" cy="80" r="35" fill="#FFD700" />
             <line x1="400" y1="30" x2="400" y2="15" stroke="#FFD700" stroke-width="3" />
             <line x1="400" y1="130" x2="400" y2="145" stroke="#FFD700" stroke-width="3" />
             <line x1="350" y1="80" x2="335" y2="80" stroke="#FFD700" stroke-width="3" />
             <line x1="450" y1="80" x2="465" y2="80" stroke="#FFD700" stroke-width="3" />
 
-            <!-- Tree Trunk and Tree Foliage -->
             <rect id="tree-trunk" x="60" y="240" width="30" height="90" fill="#8B4513" />
             <ellipse id="tree-foliage" cx="75" cy="210" rx="50" ry="40" fill="#2E8B57" />
 
-            <!-- House Body -->
             <rect id="house-body" x="150" y="200" width="200" height="150" fill="#A0522D" />
 
-            <!-- House Roof -->
             <polygon id="house-roof" points="150,200 250,100 350,200" fill="#8B0000" />
 
-            <!-- Door and Doorknob  -->
             <rect id="door" x="225" y="270" width="50" height="80" fill="#D2691E" />
             <circle id="doorknob" cx="265" cy="315" r="4" fill="#000000" />
 
-            <!-- Windows and Window Grids  -->
-            <!-- Main Windows Group (Applies shared styling to all child elements) -->
             <g id="all-windows" fill="#E0FFFF" stroke="#4682B4" stroke-width="2">
               
-              <!-- Left Window (Positioned using translate) -->
               <g id="window-left" transform="translate(175, 230)">
                 <rect width="35" height="35" />
                 <line x1="17.5" y1="0" x2="17.5" y2="35" />
                 <line x1="0" y1="17.5" x2="35" y2="17.5" />
               </g>
 
-              <!-- Right Window (Positioned using translate) -->
               <g id="window-right" transform="translate(290, 230)">
                 <rect width="35" height="35" />
                 <line x1="17.5" y1="0" x2="17.5" y2="35" />
@@ -102,62 +89,47 @@
 
             </g>
 
-            <!-- Fence -->
             <polyline id="fence" points="10,340 10,300 30,300 30,340 50,340 50,300 70,300 70,340" stroke="#FFFFFF" stroke-width="3" fill="none" />
 
-            <!-- Curved Garden Pathway -->
             <path id="pathway" d="M 225,350 Q 170,420 250,500" stroke="#FFA500" stroke-width="16" fill="none" />
 
-            <!-- Text Label -->
             <text id="house-text" x="370" y="280" font-family="Work Sans, sans-serif" font-size="22" font-weight="bold" fill="#000000">House</text>
           </svg>
         </div>
       </div>
 
-      <!-- Box 2: After -->
       <div class="svg-card">
         <h3>After (Modified Coordinates and Layout)</h3>
         <div class="svg-container">
           <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <!-- Sky -->
             <rect id="sky" x="0" y="0" width="500" height="300" fill="#87CEEB" />
             
-            <!-- Ground -->
             <rect id="ground" x="0" y="300" width="500" height="200" fill="#228B22" />
 
-            <!-- Sun Moved Left and Rays -->
             <circle id="sun" cx="100" cy="80" r="35" fill="#FFD700" />
             <line x1="100" y1="30" x2="100" y2="15" stroke="#FFD700" stroke-width="3" />
             <line x1="100" y1="130" x2="100" y2="145" stroke="#FFD700" stroke-width="3" />
             <line x1="50" y1="80" x2="35" y2="80" stroke="#FFD700" stroke-width="3" />
             <line x1="150" y1="80" x2="165" y2="80" stroke="#FFD700" stroke-width="3" />
 
-            <!-- Tree Trunk and Tree Foliage Shifted to Right Lawn -->
             <rect id="tree-trunk" x="410" y="240" width="30" height="90" fill="#8B4513" />
             <ellipse id="tree-foliage" cx="425" cy="210" rx="50" ry="40" fill="#2E8B57" />
 
-            <!-- House Body Shifted 20px Right -->
             <rect id="house-body" x="170" y="200" width="200" height="150" fill="#A0522D" />
 
-            <!-- House Roof  Shifted 20px Right -->
             <polygon id="house-roof" points="170,200 270,100 370,200" fill="#8B0000" />
 
-            <!-- Door and Doorknob Shifted 20px Right -->
             <rect id="door" x="245" y="270" width="50" height="80" fill="#D2691E" />
             <circle id="doorknob" cx="285" cy="315" r="4" fill="#000000" />
 
-            <!-- Windows Shifted 20px Right -->
-            <!-- Main Windows Group (Applies shared styling to all child elements) -->
             <g id="all-windows" fill="#E0FFFF" stroke="#4682B4" stroke-width="2">
               
-              <!-- Left Window (Positioned using translate) -->
               <g id="window-left" transform="translate(195, 250)">
                 <rect width="35" height="35" />
                 <line x1="17.5" y1="0" x2="17.5" y2="35" />
                 <line x1="0" y1="17.5" x2="35" y2="17.5" />
               </g>
 
-              <!-- Right Window (Positioned using translate) -->
               <g id="window-right" transform="translate(310, 250)">
                 <rect width="35" height="35" />
                 <line x1="17.5" y1="0" x2="17.5" y2="35" />
@@ -166,13 +138,10 @@
 
             </g>
 
-            <!-- Fence Moved to Right Side -->
             <polyline id="fence" points="370,340 370,300 390,300 390,340 410,340 410,300 430,300 430,340" stroke="#FFFFFF" stroke-width="3" fill="none" />
 
-            <!-- Curved Garden Pathway Re-curved -->
             <path id="pathway" d="M 245,350 Q 310,420 180,500" stroke="#FFA500" stroke-width="16" fill="none" />
 
-            <!-- Text Label Moved and Updated -->
             <text id="house-text" x="30" y="380" font-family="Work Sans, sans-serif" font-size="22" font-weight="bold" fill="#000000">My Eco House</text>
           </svg>
         </div>
@@ -180,7 +149,6 @@
 
     </section>
 
-    <!-- Comparison Table Section -->
     <section class="table-section">
       <h2 class="section-title">Coordinate and Position Comparison Table</h2>
       <p class="section-subtitle">Below is a detailed element-by-element analysis comparing the initial coordinates and attributes to the modified layout.</p>
