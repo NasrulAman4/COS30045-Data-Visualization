@@ -47,4 +47,21 @@ const drawHistogram = (data) => {
         .append("g")
         .call(leftAxis);
 
+        innerChart
+        .append("text")
+        .text("Frequency")
+        .attr("x", -margin.left)
+        .attr("y", -10)
+        .attr("text-anchor", "start")
+        .attr("font-size", "12px");
+
+        innerChart
+        .append("text")
+        .text("Labeled Energy Consumption (kWh/year)")
+        .attr("x", innerWidth)
+        .attr("y", innerHeight + margin.bottom - 5)
+        .attr("text-anchor", "end")
+        .attr("font-size", "12px");
+
+
     };
